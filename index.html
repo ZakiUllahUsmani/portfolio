@@ -167,6 +167,17 @@
   .strip .lbl{font-family:'JetBrains Mono'; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-right:8px;}
   .strip .tool{font-family:'Space Grotesk'; font-weight:600; font-size:15px; color:var(--ink-soft); opacity:.85;}
 
+
+  /* ---------- EXPOSURE ---------- */
+  .exposure-strip{border-bottom:1px solid var(--line); padding:34px 0; background:var(--cream);}
+  .exposure-grid{display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:start;}
+  .exposure-group{background:var(--white); border:1px solid var(--line); border-radius:16px; padding:24px 26px;}
+  .exposure-group h3{font-size:16px; margin-bottom:16px;}
+  .exposure-group h3::before{content:'// '; font-family:'JetBrains Mono'; color:var(--amber-deep); font-size:12px;}
+  .exposure-chips{display:flex; flex-wrap:wrap; gap:9px;}
+  .exposure-chip{font-family:'JetBrains Mono'; font-size:12px; padding:8px 12px; border-radius:8px; background:var(--cream-2); border:1px solid var(--line); color:var(--ink-soft);}
+  @media(max-width:720px){.exposure-grid{grid-template-columns:1fr;}}
+
   /* ---------- SECTION SHARED ---------- */
   section{padding:100px 0;}
   .sec-head{max-width:600px; margin-bottom:52px;}
@@ -345,6 +356,30 @@
     
     <span class="tool">SQL</span><span class="tool">Excel</span>
   <span class="tool">Power BI</span><span class="tool">Tableau</span><span class="tool">Looker Studio</span><span class="tool">DAX</span><span class="tool">Power Query</span><span class="tool">Azure Data Factory</span><span class="tool">Data Modeling</span><span class="tool">SSRS</span><span class="tool">Power Automate</span><span class="tool">Statistics</span><span class="tool">Machine Learning</span><span class="tool">Deep Learning</span><span class="tool">Natural Language Processing (NLP)</span><span class="tool">Retrival Augmented Generation (RAG)</span><span class="tool">Microsoft Copilot Studio</span></div>
+</div>
+
+<div class="exposure-strip">
+  <div class="wrap exposure-grid">
+    <div class="exposure-group">
+      <h3>Geographical Exposure</h3>
+      <div class="exposure-chips">
+        <span class="exposure-chip">India</span>
+        <span class="exposure-chip">Saudi Arabia</span>
+        <span class="exposure-chip">USA</span>
+        <span class="exposure-chip">UK</span>
+      </div>
+    </div>
+    <div class="exposure-group">
+      <h3>Industry Exposure</h3>
+      <div class="exposure-chips">
+        <span class="exposure-chip">Real Estate</span>
+        <span class="exposure-chip">Finance</span>
+        <span class="exposure-chip">Sales</span>
+        <span class="exposure-chip">People &amp; Culture</span>
+        <span class="exposure-chip">Project Management</span>
+      </div>
+    </div>
+  </div>
 </div>
 
 <section id="about">
