@@ -102,10 +102,15 @@
   .hero-profile-wrap{
     position:relative; min-height:470px; display:flex; align-items:flex-end; justify-content:center;
   }
-  .hero-profile-glow{
-    position:absolute; width:390px; height:390px; border-radius:50%;
-    background:radial-gradient(circle, rgba(232,149,42,.22), rgba(31,111,99,.08) 48%, transparent 72%);
-    top:28px; left:50%; transform:translateX(-50%); filter:blur(2px);
+  .hero-profile-glow-outer{
+    position:absolute; width:470px; height:470px; border-radius:50%;
+    background:radial-gradient(circle, rgba(232,149,42,.16), rgba(232,149,42,.06) 55%, transparent 78%);
+    top:-12px; left:50%; transform:translateX(-50%);
+  }
+  .hero-profile-glow-inner{
+    position:absolute; width:410px; height:410px; border-radius:50%;
+    background:radial-gradient(circle, rgba(232,149,42,.38), rgba(201,116,26,.20) 60%, transparent 85%);
+    top:18px; left:50%; transform:translateX(-50%);
   }
   .hero-profile{
     position:absolute; z-index:2; width:390px; height:390px;
@@ -280,7 +285,8 @@
     .burger{display:flex;}
     .hero h1{font-size:40px;}
     .hero-profile-wrap{min-height:390px; margin-top:10px;}
-    .hero-profile-glow{width:min(340px, 88%); height:min(340px, 88%); top:20px;}
+    .hero-profile-glow-outer{width:min(410px, 96%); height:min(410px, 96%); top:-10px;}
+    .hero-profile-glow-inner{width:min(360px, 90%); height:min(360px, 90%); top:15px;}
     .hero-profile{width:min(340px, 88%); height:min(340px, 88%); top:20px;}
     .hero-profile-tag{right:4%; bottom:30px;}
     .contact-inner{flex-direction:column; align-items:flex-start; padding:44px 28px;}
@@ -290,7 +296,8 @@
     .impact-grid{grid-template-columns:1fr;}
     .hero{padding:56px 0 40px;}
     .hero-profile-wrap{min-height:330px;}
-    .hero-profile-glow{width:min(280px, 88%); height:min(280px, 88%); top:14px;}
+    .hero-profile-glow-outer{width:min(340px, 96%); height:min(340px, 96%); top:-8px;}
+    .hero-profile-glow-inner{width:min(298px, 90%); height:min(298px, 90%); top:11px;}
     .hero-profile{width:min(280px, 88%); height:min(280px, 88%); top:14px;}
     .hero-profile-tag{font-size:10px; padding:8px 11px;}
     .dash{padding:16px;}
@@ -344,7 +351,8 @@
     </div>
 
     <div class="hero-profile-wrap">
-      <div class="hero-profile-glow"></div>
+      <div class="hero-profile-glow-outer"></div>
+      <div class="hero-profile-glow-inner"></div>
       <img class="hero-profile" src="images/profile.png" alt="Md Zaki Ullah Usmani — Senior Data Analyst">
     </div>
   </div>
