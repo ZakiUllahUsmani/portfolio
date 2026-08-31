@@ -179,7 +179,8 @@
   /* ---------- EXPOSURE ---------- */
   .exposure-strip{border-bottom:1px solid var(--line); padding:34px 0; background:var(--cream);}
   .exposure-grid{display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:start;}
-  .exposure-group{background:var(--white); border:1px solid var(--line); border-radius:16px; padding:24px 26px;}
+  .exposure-group{background:var(--white); border:1px solid var(--line); border-radius:16px; padding:24px 26px; transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;}
+  .exposure-group:hover{transform:translateX(6px); box-shadow:0 14px 30px -18px rgba(16,27,45,.25); border-color:var(--amber);}
   .exposure-group h3{font-size:16px; margin-bottom:16px;}
   .exposure-group h3::before{content:'// '; font-family:'JetBrains Mono'; color:var(--amber-deep); font-size:12px;}
   .exposure-chips{display:flex; flex-wrap:wrap; gap:9px;}
@@ -237,6 +238,28 @@
   .tl-item ul{padding-left:18px; color:var(--ink-soft); font-size:14.5px; line-height:1.7;}
   .tl-item li{margin-bottom:4px;}
   .tl-item li::marker{color:var(--amber-deep);}
+
+  /* ---------- CERTIFICATIONS ---------- */
+  .cert-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:20px;}
+  .cert-card{
+    background:var(--white); border:1px solid var(--line); border-radius:16px; padding:18px;
+    display:flex; flex-direction:column; align-items:center; text-align:center; gap:14px;
+    transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    cursor:pointer;
+  }
+  .cert-card:hover{transform:translateY(-6px); box-shadow:0 20px 40px -20px rgba(16,27,45,.28); border-color:var(--amber);}
+  .cert-img{
+    width:100%; aspect-ratio:4/3; border-radius:10px;
+    background:var(--cream-2); border:1px dashed var(--line);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'JetBrains Mono'; font-size:11px; color:var(--muted);
+    overflow:hidden; position:relative;
+  }
+  .cert-img::before{content:'Certificate image'; position:absolute; inset:0; display:flex; align-items:center; justify-content:center; text-align:center; padding:8px;}
+  .cert-img img{width:100%; height:100%; object-fit:cover; position:relative; z-index:1;}
+  .cert-card h3{font-size:14px; line-height:1.4;}
+  @media(max-width:900px){.cert-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:520px){.cert-grid{grid-template-columns:1fr;}}
 
   /* ---------- FOCUS AREAS (services) ---------- */
   .focus-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
@@ -373,6 +396,9 @@
 </div>
 
 <div class="exposure-strip">
+  <div class="wrap">
+    <div class="sec-eyebrow" style="margin-bottom:20px;">// Exposure</div>
+  </div>
   <div class="wrap exposure-grid">
     <div class="exposure-group">
       <h3>Geographical Exposure</h3>
@@ -395,6 +421,37 @@
     </div>
   </div>
 </div>
+
+<section id="certifications">
+  <div class="wrap">
+    <div class="sec-head reveal in">
+      <div class="sec-eyebrow">// Certifications</div>
+      <h2>Credentials that back the work</h2>
+    </div>
+    <div class="cert-grid reveal in">
+      <a class="cert-card" href="images/pl300.png" target="_blank" rel="noopener">
+        <div class="cert-img"><img src="images/pl300.png" alt="Microsoft Power BI Data Analyst (PL-300) certificate"></div>
+        <h3>Microsoft Power BI Data Analyst (PL-300)</h3>
+      </a>
+      <a class="cert-card" href="images/microsoft-fabric.png" target="_blank" rel="noopener">
+        <div class="cert-img"><img src="images/microsoft-fabric.png" alt="Microsoft Fabric certificate"></div>
+        <h3>Microsoft Fabric</h3>
+      </a>
+      <a class="cert-card" href="images/python.png" target="_blank" rel="noopener">
+        <div class="cert-img"><img src="images/python.png" alt="Python certificate"></div>
+        <h3>Python</h3>
+      </a>
+      <a class="cert-card" href="images/sql.png" target="_blank" rel="noopener">
+        <div class="cert-img"><img src="images/sql.png" alt="SQL certificate"></div>
+        <h3>SQL</h3>
+      </a>
+      <a class="cert-card" href="images/neural-network.png" target="_blank" rel="noopener">
+        <div class="cert-img"><img src="images/neural-network.png" alt="Neural Network certificate"></div>
+        <h3>Neural Network</h3>
+      </a>
+    </div>
+  </div>
+</section>
 
 <section id="about">
   <div class="wrap about-grid">
