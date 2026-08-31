@@ -240,7 +240,7 @@
   .tl-item li::marker{color:var(--amber-deep);}
 
   /* ---------- CERTIFICATIONS ---------- */
-  .cert-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:20px;}
+  .cert-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
   .cert-card{
     background:var(--white); border:1px solid var(--line); border-radius:16px; padding:18px;
     display:flex; flex-direction:column; align-items:center; text-align:center; gap:14px;
@@ -258,6 +258,7 @@
   .cert-img::before{content:'Certificate image'; position:absolute; inset:0; display:flex; align-items:center; justify-content:center; text-align:center; padding:8px;}
   .cert-img img{width:100%; height:100%; object-fit:cover; position:relative; z-index:1;}
   .cert-card h3{font-size:14px; line-height:1.4;}
+  @media(max-width:1000px){.cert-grid{grid-template-columns:repeat(3,1fr);}}
   @media(max-width:900px){.cert-grid{grid-template-columns:repeat(2,1fr);}}
   @media(max-width:520px){.cert-grid{grid-template-columns:1fr;}}
 
@@ -429,25 +430,33 @@
       <h2>Credentials that back the work</h2>
     </div>
     <div class="cert-grid reveal in">
-      <a class="cert-card" href="images/pl300.png" target="_blank" rel="noopener">
+      <a class="cert-card" href="https://learn.microsoft.com/api/credentials/share/en-in/MDZAKIULLAHUSMANI-9002/2E8B6D3710BB5DD5?sharingId=8A4E8C179E8965B5" target="_blank" rel="noopener">
         <div class="cert-img"><img src="images/pl300.png" alt="Microsoft Power BI Data Analyst (PL-300) certificate"></div>
         <h3>Microsoft Power BI Data Analyst (PL-300)</h3>
       </a>
-      <a class="cert-card" href="images/microsoft-fabric.png" target="_blank" rel="noopener">
+      <a class="cert-card" href="https://learn.microsoft.com/api/achievements/share/en-in/MDZAKIULLAHUSMANI-9002/U7V5AQM3?sharingId=8A4E8C179E8965B5" target="_blank" rel="noopener">
         <div class="cert-img"><img src="images/microsoft-fabric.png" alt="Microsoft Fabric certificate"></div>
         <h3>Microsoft Fabric</h3>
       </a>
-      <a class="cert-card" href="images/python.png" target="_blank" rel="noopener">
+      <a class="cert-card" href="https://learn.microsoft.com/api/achievements/share/en-in/MDZAKIULLAHUSMANI-9002/H2QG24A8?sharingId=8A4E8C179E8965B5" target="_blank" rel="noopener">
+        <div class="cert-img"><img src="images/copilot-power-bi.png" alt="Copilot in Power BI certificate"></div>
+        <h3>Copilot in Power BI</h3>
+      </a>
+      <a class="cert-card" href="https://www.hackerrank.com/certificates/493d1937565f" target="_blank" rel="noopener">
         <div class="cert-img"><img src="images/python.png" alt="Python certificate"></div>
         <h3>Python</h3>
       </a>
-      <a class="cert-card" href="images/sql.png" target="_blank" rel="noopener">
+      <a class="cert-card" href="https://www.hackerrank.com/certificates/651ffcd56f20" target="_blank" rel="noopener">
         <div class="cert-img"><img src="images/sql.png" alt="SQL certificate"></div>
         <h3>SQL</h3>
       </a>
-      <a class="cert-card" href="images/neural-network.png" target="_blank" rel="noopener">
-        <div class="cert-img"><img src="images/neural-network.png" alt="Neural Network certificate"></div>
-        <h3>Neural Network</h3>
+      <a class="cert-card" href="https://certificates.almabetter.com/en/verify/93735695037539" target="_blank" rel="noopener">
+        <div class="cert-img"><img src="images/machine-learning.png" alt="Machine Learning certificate"></div>
+        <h3>Machine Learning</h3>
+      </a>
+      <a class="cert-card" href="https://coursera.org/share/1fec40e45cb4aa41e9c7a894f2428c0e" target="_blank" rel="noopener">
+        <div class="cert-img"><img src="images/deep-learning.png" alt="Deep Learning certificate"></div>
+        <h3>Deep Learning</h3>
       </a>
     </div>
   </div>
